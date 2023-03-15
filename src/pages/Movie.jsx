@@ -8,7 +8,12 @@ export default function Movie(props) {
   posterImage = 'https://cinema-rest.nodehill.se/' + posterImage;
 
   return <div className="movie">
-    <h2>{title}</h2>
-    <img src={posterImage} />
-  </div>;
+  <h2>{title}</h2>
+      <img
+        src={posterImage}
+        alt={`Poster for ${title}`}
+        className="movie-poster"
+        style={{ width: "200px", height: "300px" }}
+      />
+    </div>
 }

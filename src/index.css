@@ -39,3 +39,7 @@
 .my-navbar .navbar-brand:hover {
   color: #fff;
 }
+
+.movie-poster{
+  object-fit: cover;
+}
