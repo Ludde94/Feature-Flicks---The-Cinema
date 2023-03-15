@@ -8,20 +8,34 @@
   width: 200px;
 }
 
-.Bar{
-  font-family: 'Oswald', sans-serif;
-  font-size: x-large;
-  background: linear-gradient(to bottom, #202020, #333333);
-  padding: 2rem;
-  transition: all 0.5s ease-in-out;
-  opacity: 1;
-  min-height: 80px;
+.my-navbar {
+  background-color: #333;
+  color: white;
+  transition: background-color 0.2s ease-in-out;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #007bff;
 }
 
-.Bar.fade-out {
-  opacity: 0;
+.my-navbar .nav-link {
+  color: #ddd;
+  transition: color 0.2s ease-in-out;
 }
-.Bar:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-  
+
+.my-navbar .nav-link:hover {
+  color: #fff;
+  background-color: #666;
+  border-radius: 5px;
+}
+.my-navbar:hover {
+  background-color: #444;
+  border-bottom-color: #2890ff;
+}
+
+.my-navbar .navbar-brand {
+  color: #ddd;
+}
+
+.my-navbar .navbar-brand:hover {
+  color: #fff;
 }
