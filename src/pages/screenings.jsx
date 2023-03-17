@@ -1,5 +1,8 @@
+import DisplaySeats from '../DisplaySeats';
+
+
 const Screenings = () => {
-    return <h1>Screenings</h1>;
+    return <><DisplaySeats screeningId={10} /></>
 };
 
 export default Screenings;

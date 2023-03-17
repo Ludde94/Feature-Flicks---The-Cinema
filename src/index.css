@@ -7,10 +7,13 @@
 body {
   margin: 0;
   padding: 0;
+  background: linear-gradient(to bottom, #333, #7e7e7e);
 }
 
 .movie img {
   width: 200px;
+  margin: 0 auto;
+  display: block; 
 }
 
 .my-navbar {
@@ -88,20 +91,60 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1200px) {
-  .movie-item {
-    width: calc(33.33% - 10px);
-  }
+
+.screening-and-seats {
+  text-align: center;
 }
 
-@media screen and (max-width: 992px) {
-  .movie-item {
-    width: calc(50% - 10px);
-  }
+.seats {
+  text-align: center;
 }
 
-@media screen and (max-width: 576px) {
-  .movie-item {
-    width: calc(100% - 10px);
-  }
+.seats>.row {
+  display: inline-block;
+}
+
+.seats>.row>div {
+  background-color: white;
+  color: black;
+  float: right;
+  text-align: center;
+  padding-top: 3px;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  width: 30px;
+  height: 30px;
+  margin: 3px 1px;
+  cursor: pointer;
+}
+
+.seats>.row>.selected {
+  background-color: #72b457;
+  color: white;
+}
+
+.seats>.row>.occupied {
+  background-color: rgb(152, 28, 28);
+  color: white;
+  cursor: not-allowed;
+}
+
+.poster-screen {
+  width: 350px;
+  object-fit: cover;
+  aspect-ratio: 20 / 9;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.my-footer {
+  background-color: #333;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 3px solid #007bff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

@@ -1,5 +1,9 @@
 // import necessary hooks from React
 import { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
 
 // import our Movie component
 import Movie from '../Movie';
@@ -17,13 +21,17 @@ const Movies = () => {
         })();
     }, []);
     return (
-        <div className="movies-container">
+      <div>
+      <Container fluid className="movieContainer">
+        <Row md={2} lg={3} xxl={4} className="mt-4">
           {movies.map(({ id, title, description }) => (
-            <div key={id} className="movie-item">
+            <Col key={id} className="mb-4">
               <Movie title={title} description={description} />
-            </div>
+            </Col>
           ))}
-        </div>
+        </Row>
+      </Container>
+      </div>
       );
     };
 
