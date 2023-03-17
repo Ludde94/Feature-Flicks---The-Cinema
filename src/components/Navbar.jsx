@@ -12,11 +12,12 @@ function Bar() {
     <>
       <Navbar className="my-navbar" expand="lg" expanded={expanded}>
         <Container>
-        <Nav.Link as={Link} to="/" className="my-nav-link mr-3" style={{fontSize: '24px'}}>Feature-Flicks</Nav.Link>
+          <Nav.Link as={Link} to="/" className="my-nav-link mr-3" style={{fontSize: '32px', fontWeight: 'bold'}}>FeatureFlicks</Nav.Link>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")} />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link as={Link} to="/screenings" className="my-nav-link mr-3">Auditorium</Nav.Link>
-              <Nav.Link as={Link} to="/movies" className="my-nav-link">Movies</Nav.Link>
+            <Nav className="ms-auto">
+              <Nav.Link as={Link} to="/screenings" className="my-nav-link" style={{fontSize: '20px', marginRight: '60px'}}>Auditorium</Nav.Link>
+              <Nav.Link as={Link} to="/movies" className="my-nav-link" style={{fontSize: '20px', marginLeft: '60px'}}>Movies</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
