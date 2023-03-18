@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 
 // import our Movie component
-import Movie from '../Movie';
+import Movie from '../components/Movie';
 
 const Movies = () => {
     // A variable that will contain a list of movies

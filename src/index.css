@@ -19,6 +19,7 @@ body {
   box-shadow: 0 0 10px 5px #2890ff;
 }
 
+
 .my-navbar {
   background-color: #333;
   color: white;
@@ -44,6 +45,10 @@ body {
   color: #fff;
   background-color: #666;
   border-radius: 5px;
+}
+
+.my-nav-link:hover {
+  box-shadow: 0 0 10px 5px #2890ff;
 }
 
 .my-navbar:hover {
@@ -80,6 +85,7 @@ body {
 
 .movie-poster {
   object-fit: cover;
+  
 }
 
 .movies-container {
@@ -163,3 +169,38 @@ body {
 .movie-title:hover {
   color: #2890ff;
 }
+.screening-cards {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px #2890ff;
+  transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .screening-cards:hover {
+  box-shadow: 0 0 20px 10px #2890ff;
+  }
+  
+  .card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  }
+  
+  .card-text {
+  font-size: 18px;
+  }
+  
+  .card-body {
+  padding: 20px;
+  }
+  
+  .card-link {
+  color: #2890ff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  }
+  
+  .card-link:hover {
+  color: white;
+  }
