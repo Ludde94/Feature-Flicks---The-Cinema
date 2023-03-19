@@ -53,7 +53,7 @@ const Screenings = () => {
             return (
               <Col key={index}>
                 <Card className="mb-4">
-                  <Screening time={time} movieTitle={movie.title} auditoriumId={auditoriumId} category={movie.description.categories} screeningId={movieId} />
+                  <Screening time={time} movieTitle={movie.title} auditoriumId={auditoriumId} category={movie.description.categories} ScreenId={movieId} />
                 </Card>
               </Col>
             );
