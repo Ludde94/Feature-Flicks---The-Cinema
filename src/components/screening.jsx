@@ -12,7 +12,7 @@ const Screening = (props) => {
         <Card.Text>{props.time}</Card.Text>
         <Card.Text>{auditoriumId}</Card.Text>
         <Card.Text>{props.category.join(", ")}</Card.Text>
-        <Link to={`/DisplaySeats/${props.screeningId}`} className="btn btn-primary btn-sm"> this isnt working
+        <Link Link to={`/DisplaySeats/${props.screeningId}`} className="btn btn-primary btn-sm"> 
           Booking
         </Link>
       </Card.Body>

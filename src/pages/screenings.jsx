@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import Screening from '../components/screening';
 
 const Screenings = () => {
@@ -54,7 +53,7 @@ const Screenings = () => {
             return (
               <Col key={index}>
                 <Card className="mb-4">
-                  <Screening time={time} movieTitle={movie.title} auditoriumId={auditoriumId} category={movie.description.categories} />
+                  <Screening time={time} movieTitle={movie.title} auditoriumId={auditoriumId} category={movie.description.categories} screeningId={movieId} />
                 </Card>
               </Col>
             );
