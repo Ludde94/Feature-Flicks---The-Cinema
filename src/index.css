@@ -204,3 +204,16 @@ body {
   .card-link:hover {
   color: white;
   }
+  .categoryButton {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #2890ff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .categoryButton:hover {
+    background-color: #0077c2;
+  }
