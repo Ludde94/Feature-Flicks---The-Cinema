@@ -11,7 +11,7 @@ const Screening = (props) => {
         <Card.Title>{props.movieTitle}</Card.Title>
         <Card.Text>{props.time}</Card.Text>
         <Card.Text>{auditoriumId}</Card.Text>
-        <Link to={`/DisplaySeats/${props.screeningId}`} className="btn btn-primary btn-sm"> not working yet
+        <Link to={`/DisplaySeats/${props.screeningId}`} className="btn btn-primary btn-sm"> this isnt working
           Booking
         </Link>
       </Card.Body>
