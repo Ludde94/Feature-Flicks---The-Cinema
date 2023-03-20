@@ -15,7 +15,7 @@ const linkUrl = `/auditorium/${description.title}`;
   return (
     <Row className="my-4">
       <Col className="text-center">
-        <Link to={linkUrl}> // here i need to link to displayseats (mb fix componet)
+        <Link to={linkUrl}>
           <h2 className="movie-title">{title}</h2>
          <Image src={posterImage} alt={`Poster for ${title}`} fluid className="movie-poster" />
         </Link>
