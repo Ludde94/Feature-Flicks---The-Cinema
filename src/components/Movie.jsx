@@ -5,12 +5,12 @@ import Image from 'react-bootstrap/Image';
 import { Link } from 'react-router-dom';
 
 export default function Movie(props) {
-  // Destructure props into separate variables
+
   let { title, description } = props;
   let { posterImage } = description;
 
   posterImage = 'https://cinema-rest.nodehill.se/' + posterImage;
-const linkUrl = `/auditorium/${description.title}`;
+  const linkUrl = `/auditorium/${description.title}`;
 
   return (
     <Row className="my-4">

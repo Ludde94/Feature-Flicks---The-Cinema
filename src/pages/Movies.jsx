@@ -13,13 +13,10 @@ const Movies = () => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-        // Self-executing asyncronous anonomyous function
         (async () => {
-            // Fetch all the movies from the REST api
-            // and store them in the state variable movies
-            setMovies(await (await (fetch('/api/movies'))).json());
+        setMovies(await (await (fetch('/api/movies'))).json());
         })();
-    }, []);
+    },[]);
     return (
       <div>
       <Container fluid className="movieContainer">
