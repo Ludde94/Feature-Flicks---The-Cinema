@@ -25,14 +25,11 @@ const Screenings = () => {
       const moviesData = await moviesResponse.json();
       setScreenings(screeningsData);
       setMovies(moviesData);
-
-      // Create a mapping of movie ids to their respective lengths
       const lengthMap = {};
       moviesData.forEach(movie => {
         lengthMap[movie.id] = movie.description.length;
       });
       setLengthMap(lengthMap);
-
       setCategories([...new Set(moviesData.map(movie => movie.description.categories).flat())]);
     })();
   }, []);
