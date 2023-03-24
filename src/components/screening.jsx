@@ -14,7 +14,7 @@ const Screening = (props) => {
         <Card.Title>{props.movieTitle}</Card.Title>
         <Card.Text>{new Date(props.time).toLocaleString()}</Card.Text>
         <Card.Text>{auditoriumId}</Card.Text>
-        <Card.Text>{hours}h {minutes}min</Card.Text>
+        <Card.Text>Length: {hours}h {minutes}min</Card.Text>
         <Card.Text>{props.category.join(", ")}</Card.Text>
         <Link Link to={`/DisplaySeats/${props.ScreenId}`} className="btn btn-primary btn-sm"> 
           Booking
